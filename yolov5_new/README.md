@@ -120,6 +120,25 @@ $ python detect.py --source 0  # webcam
 </details>
 
 <details>
+<summary>Inference duo</summary>
+
+`detect.py` runs inference on a variety of sources, download trained weight file from
+ [here](https://drive.google.com/drive/folders/13Ty9ju1MccoHnC1BtUukW0C6LVObAUva) and saving weight to `runs/detect`.
+
+```bash
+$ python detect.py --weights runs/detect/best.pt
+                       --source 0  # webcam
+                            img.jpg  # image
+                            vid.mp4  # video
+                            path/  # directory
+                            path/*.jpg  # glob
+                            'https://youtu.be/Zgi9g1ksQHc'  # YouTube
+                            'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
+```
+
+</details>
+
+<details>
 <summary>Training</summary>
 
 Run commands below to reproduce results
